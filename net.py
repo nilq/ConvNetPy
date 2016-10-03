@@ -76,7 +76,7 @@ class Net(object):
                     elif layerAct == 'maxout':
                         newLayers.append({
                             'type': 'maxout',
-                            'group_size': layer['group_size'] if group_size in layerKeys else 2
+                            'group_size': layer['group_size'] if 'group_size' in layerKeys else 2
                         })
                     else:
                         print 'Error: Unsupported activation'
