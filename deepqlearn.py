@@ -145,7 +145,7 @@ class Brain(object):
         or less likely at "rest"/default state.
         """
 
-        if len(random_action_distribution) == 0:
+        if len(self.random_action_distribution) == 0:
             return randi(0, self.num_actions)
         else:
             #okay, lets do some fancier sampling
